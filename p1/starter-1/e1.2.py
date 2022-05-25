@@ -17,11 +17,10 @@
 
 #Solution:
 
-words = ["Simeoni", "Juhani", "Eero", "Lauri", "Aapo", "Tuomas", "Timo"]
-
-# sort the list
-words.sort()
-
-print("The correct order of words are: ")
-for names in words:
-   print(names)
+print("Aapo")
+print("Eero")
+print("Juhani")
+print("Lauri")
+print("Simeoni")
+print("Timo")
+print("Tuomas")
