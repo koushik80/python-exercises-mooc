@@ -22,6 +22,6 @@ words = ["Simeoni", "Juhani", "Eero", "Lauri", "Aapo", "Tuomas", "Timo"]
 # sort the list
 words.sort()
 
-print("The correct order of words are:")
+print("The correct order of words are: ")
 for names in words:
    print(names)
