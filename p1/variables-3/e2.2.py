@@ -25,12 +25,12 @@
 
                 #my name is Tim Tester, I am 20 years old
 
-                #my skills are
+               # my skills are
                #  - python(beginner)
                #  - java(veteran)
                #  - programming(semiprofessional)
 
-                #I am looking for a job with a salary of 2000-3000 euros per month
+               # I am looking for a job with a salary of 2000-3000 euros per month
 
 #Solution:
 
