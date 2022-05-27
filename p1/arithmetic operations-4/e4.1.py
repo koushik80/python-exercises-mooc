@@ -10,7 +10,9 @@
 
 #Solution:
 
-
+x = input("Please type in a number: ")
+num = int(x)
+print(f"{num} times 5 is {num * 5}")
 
 
 
