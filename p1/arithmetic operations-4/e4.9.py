@@ -20,9 +20,9 @@
 
 #Solution:
 
-#num_students = int(input("How many students on the course?"))
-#size_groups = int(input("Desired group size?"))
-#group_form = int(num_students / size_groups)
+num_students = int(input("How many students on the course?"))
+size_groups = int(input("Desired group size?"))
+group_form = int(num_students / size_groups)
 
 
 
