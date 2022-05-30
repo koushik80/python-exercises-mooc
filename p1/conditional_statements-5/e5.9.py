@@ -75,3 +75,4 @@ elif temp < 5:
     elif rain == "no":
         print()
 
+#not solved yet
