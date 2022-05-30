@@ -22,7 +22,8 @@
 
 num_students = int(input("How many students on the course?"))
 size_groups = int(input("Desired group size?"))
-group_form = int(num_students / size_groups)
 
+group_form = (num_students + size_groups - 1) // size_groups
 
+print("Number of groups formed:", group_form)
 
