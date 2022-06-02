@@ -41,20 +41,25 @@
 
 value = int(input("Value of gift: "))
 
-x = 5000
-tax_lr_limit = 0
-tax_r_excd = 0
-
-tax = (tax_lr_limit + (value - x) * tax_r_excd)
-
-if value < x:
+if value < 5000:
     print("No tax!")
-elif value >= x:
-    if tax_lr_limit >= 100 and tax_r_excd >= 8:
-        print("Amount of tax:",tax,"euros")
-    else:
-        False
-
-
-
-####undone
+elif value >= 5000 and value < 25000:
+    diff = value - 5000
+    tax = (0.08 * diff) + 100
+    print("Amount of tax:", tax)
+elif value >= 25000 and value < 55000:
+    diff = value - 25000
+    tax = (0.1 * diff) + 1700
+    print("Amount of tax:", tax)
+elif value >= 55000 and value < 200000:
+    diff = value - 55000
+    tax = (0.12 * diff) + 4700
+    print("Amount of tax:", tax)
+elif value >= 200000 and value < 1000000:
+    diff = value - 200000
+    tax = (0.15 * diff) + 22100
+    print("Amount of tax:", tax)
+else:
+    diff = value - 1000000
+    tax = (0.17 * diff) + 142100
+    print("Amount of tax:", tax)
