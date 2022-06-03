@@ -63,28 +63,30 @@
 print(f'Please type in integer numbers. Type in 0 to finish.')
 
 total_num = 0
-sum = 0
+summ_num = 0
 mean = 0
 pos_num = 0
 neg_num = 0
 attempt = 0
 
 while True:
-        num = int(input("Number: "))
-        attempt += 1
-        if num == 0:
+     num = int(input("Number: "))
+      attempt += 1
+       if num == 0:
              break
         if num < 0 and num > 1:
              continue
         total_num += 1
+        summ_num += num
         if num >= 0:
             pos_num += 1
         elif num < 0:
             neg_num += 1
 
+
 print(" ")
 print(f'Numbers typed in {total_num}')
-print('The sum of the numbers is {sum}')
+print(f'The sum of the numbers is {summ_num}')
 print(f'The mean of the numbers is {mean}')
 print(f'Positive numbers {pos_num}')
 print(f'Negative numbers {neg_num}')
