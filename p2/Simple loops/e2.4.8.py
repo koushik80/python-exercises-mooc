@@ -64,7 +64,6 @@ print(f'Please type in integer numbers. Type in 0 to finish.')
 
 total_num = 0
 summ_num = 0
-mean = 0
 pos_num = 0
 neg_num = 0
 
@@ -86,6 +85,6 @@ while True:
 print(" ")
 print(f'Numbers typed in {total_num}')
 print(f'The sum of the numbers is {summ_num}')
-print(f'The mean of the numbers is {mean}')
+print(f'The mean of the numbers is {summ_num / total_num}')
 print(f'Positive numbers {pos_num}')
 print(f'Negative numbers {neg_num}')
