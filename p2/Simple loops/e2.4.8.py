@@ -67,12 +67,11 @@ summ_num = 0
 mean = 0
 pos_num = 0
 neg_num = 0
-attempt = 0
+
 
 while True:
-     num = int(input("Number: "))
-      attempt += 1
-       if num == 0:
+        num = int(input("Number: "))
+        if num == 0:
              break
         if num < 0 and num > 1:
              continue
