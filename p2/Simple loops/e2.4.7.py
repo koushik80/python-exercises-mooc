@@ -28,7 +28,7 @@
         #Please type in a word: night
         #It was a dark and stormy night
 
-#Solution Part 1 + 2:
+#Solution Part1 + 2:
 
 sentence = " "
 temp_word = None
