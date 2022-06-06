@@ -29,7 +29,7 @@
             #32
             #64
 
-#Solution:
+#Solution :
 
 limit = int(input("Upper limit: "))
 num = 1
