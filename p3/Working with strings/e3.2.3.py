@@ -17,8 +17,9 @@
 str = input("Please type in a string: ")
 
 #reverse string using while loop
-reverse = ''  # store reversed string char by char
+reverse = ''  #store reversed string char by char
 length = len(str) - 1
+
 while length >= 0:
     print(str[length])
     reverse = reverse + str[length]
