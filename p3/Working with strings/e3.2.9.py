@@ -26,6 +26,6 @@ n = 3
 
 print(x)
 for i in range(n):
-    print("*" , word , "*")
+    print("*       " + word + "       *")
 
 print(x)
