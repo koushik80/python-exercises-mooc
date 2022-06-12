@@ -20,12 +20,10 @@
 
 #Solution:
 
+import math
+
 word = input("Word: ")
-x = "*" * 30
-n = 3
-
-print(x)
-for i in range(n):
-    print("*       " + word + "       *")
-
-print(x)
+print("*" * 30)
+print("*" * 1 + " " * math.floor((28 - math.floor(len(word)))/2) +
+      word + " " * math.floor((28 - math.floor(len(word)))/2) + 1 * "*")
+print("*" * 30)
