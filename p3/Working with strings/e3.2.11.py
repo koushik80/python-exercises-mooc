@@ -14,9 +14,8 @@
 #Solution:
 
 str = input("Please type in a string: ")
+lenght = len(str)
 
 
-print(str[-1])
-print(str[-2:])
-print(str[-3:])
-print(str[0:])
+for i in range(lenght, -1, -1):
+    print(str[i:lenght])
