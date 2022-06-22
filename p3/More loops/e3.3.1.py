@@ -25,9 +25,10 @@
 
 
 num = int(input("Please type in a number: "))
-i = 1
-while num % 2 == 0:
+i = 0
+while True:
     if i == num:
         break
-    i += 1
+    elif num >= 0:
+        i += 1
     print(num, 'x', i, '=', num * i)
