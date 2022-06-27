@@ -23,8 +23,8 @@
 
 #Solution:
 
-word = input("Please type in a word: ")
-char = input("Please type in a character: ")
+word = input("Please type in a string: ")
+char = input("Please type in a substring: ")
 index = word.find(char)
 position = ""
 count = 0
