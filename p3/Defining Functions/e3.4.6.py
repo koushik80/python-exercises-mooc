@@ -42,4 +42,4 @@ def chessboard(n):
 
 
 if __name__ == "__main__":
-    chessboard(3)
+    chessboard(n)

@@ -25,10 +25,9 @@
 
 
 num = int(input("Please type in a number: "))
-i = 0
-while True:
-    if i == num:
-        break
-    elif num >= 0:
-        i += 1
-    print(num, 'x', i, '=', num * i)
+
+for i in range(1, num + 1):
+    for j in range(1, num + 1):
+        print(f"{i} x {j} = {i * j}")
+
+print()
