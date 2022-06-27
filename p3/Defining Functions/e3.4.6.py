@@ -1,4 +1,4 @@
-#E-3.4.6:Chessboard
+#E-3.4.6: Chessboard
 
 #Problem: Please write a function named chessboard,
 #which prints out a chessboard made out of ones and zeroes.
