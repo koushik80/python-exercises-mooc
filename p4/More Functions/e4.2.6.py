@@ -43,3 +43,25 @@
 
 
 #Solution:
+
+# Copy here code of line function from previous exercise and use it in your solution
+
+def line(num, str):
+    if str == "":
+        str = "*"
+        print(num*str)
+    else:
+        print(num*str[0])
+
+
+def shape(sqr_size, sqr_char, rect_size, rect_char):
+    for i in range(0, sqr_size+1):
+        line(i, sqr_char)
+
+    for i in range(0, rect_size):
+        line(sqr_size, rect_char)
+
+
+# You can test your function by calling it within the following block
+if __name__ == "__main__":
+    shape(5, "x", 3, "o")
