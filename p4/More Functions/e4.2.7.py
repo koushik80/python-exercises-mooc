@@ -27,3 +27,22 @@
         #     *
 
 #Solution:
+
+
+def spruce(n):
+    print("a spruce!")
+    i = 1
+    x = 0
+    y = "**"
+
+    while i <= n:
+        print(" "*(n-i) + "*" + y*x)
+        i += 1
+        x += 1
+
+    print(" " * (n-1) + "*")
+
+
+# You can test your function by calling it within the following block
+if __name__ == "__main__":
+    spruce(5)
