@@ -36,7 +36,7 @@ def spruce(n):
     y = "**"
 
     while i <= n:
-        print(" "*(n-i) + "*" + y*x)
+        print(" " * (n-i) + "*" + y*x)
         i += 1
         x += 1
 
