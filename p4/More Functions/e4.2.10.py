@@ -28,11 +28,7 @@
         #print(second_word(sentence)) # was
         #print(last_word(sentence)) # was
 
-
 #Solution:
-
-
-
 
 def first_word(sentence:str):
     word = sentence.split(" ")
