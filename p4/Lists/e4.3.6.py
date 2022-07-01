@@ -18,3 +18,14 @@
         #The length is 4
 
 #Solution:
+
+
+def length(my_list):
+    return len(my_list)
+
+
+# You can test your function by calling it within the following block
+if __name__ == "__main__":
+    my_list = [3, 6, -4]
+    result = len(my_list)
+    print(f'The length is {result}')
