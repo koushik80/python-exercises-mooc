@@ -32,3 +32,16 @@
 #so you should not place any code within an if __name__ == "__main__" block.
 
 #Solution:
+
+lst = []
+i = 0
+
+while True:
+    v = int(input("New item: "))
+    if v <= i:
+        print("Bye!")
+        break
+    else:
+        lst.append(v)
+    print(f'The list now: {lst}')
+    print(f'The list in order: {sorted(lst)}')
