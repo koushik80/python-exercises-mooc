@@ -31,7 +31,7 @@ print(f'You typed in {len(lst)} different words')
 
 
 
-#different way:
+#different method:
 
 #lst = []
 #i = 0
