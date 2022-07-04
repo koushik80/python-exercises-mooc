@@ -5,4 +5,4 @@
 
 <h3 align="center">Track Record</h3>
 
-<img width="1698" alt="Screenshot 2022-07-01 at 9 12 30 PM" src="https://user-images.githubusercontent.com/89943976/176948366-239d6185-13de-43a3-b18d-6e2caf5108cd.png">
+<img width="1695" alt="Screenshot 2022-07-04 at 9 38 23 PM" src="https://user-images.githubusercontent.com/89943976/177204818-a7512ed3-368d-4dc9-9a1a-b5ef5d9afbbb.png">
