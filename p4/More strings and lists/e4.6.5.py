@@ -19,3 +19,24 @@
 # 4
 
 # Solution:
+
+def longest_series_of_neighbours(lst: list):
+
+    l = len(lst)
+    calculation = 0
+    list_of_neighbours = 0
+
+    for i in range(l-1):
+        if abs(lst[i] - lst[i + 1]) == 1:
+            calculation += 1
+        else:
+            calculation = 0
+        if calculation > list_of_neighbours:
+            list_of_neighbours = calculation
+
+    return list_of_neighbours + 1
+
+
+if __name__ == '__main__':
+    my_list = [1, 2, 5, 7, 6, 5, 6, 3, 4, 1, 0]
+    print(longest_series_of_neighbours(my_list))
