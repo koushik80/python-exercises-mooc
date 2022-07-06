@@ -17,3 +17,17 @@
 # ths s n xmpl
 
 # Solution:
+
+
+def no_vowels(text: str):
+
+    vowels = ['a', 'e', 'i', 'o', 'u']
+
+    for letter in vowels:
+        text = text.replace(letter, "")
+    return text
+
+
+if __name__ == '__main__':
+    my_string = "this is an example"
+    print(no_vowels(my_string))
