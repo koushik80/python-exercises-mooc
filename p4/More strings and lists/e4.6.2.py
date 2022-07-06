@@ -19,3 +19,20 @@
 # e
 
 # Solution:
+
+def most_common_character(word: str):
+    text = ""
+    chr = 0
+    for i in word:
+        if word.count(i) > chr:
+            chr = word.count(i)
+            text = i
+    return text
+
+
+if __name__ == '__main__':
+    first_string = "abcdbde"
+    print(most_common_character(first_string))
+
+    first_string = "abcdbde"
+    print(most_common_character(first_string))
