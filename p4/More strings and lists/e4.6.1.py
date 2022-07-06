@@ -16,3 +16,15 @@
 #['erom eno', 'elpmaxe', 'ereht', 'iH']
 
 # Solution:
+
+def everything_reversed(lst: list):
+    new_list = []
+    for i in lst:
+        new_list.append(i[::-1])
+    return new_list[::-1]
+
+
+if __name__ == '__main__':
+    my_list = ["Hi", "there", "example", "one more"]
+    new_list = everything_reversed(my_list)
+    print(new_list)
