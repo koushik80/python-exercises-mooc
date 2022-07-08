@@ -22,3 +22,28 @@
 
 
 # Solution:
+
+def who_won(game_board: list):
+
+    player_1 = 0
+    player_2 = 0
+
+    for i in range(0, 1):
+        for row in game_board:
+            for column in row:
+                if column == 1:
+                    player_1 += 1
+                elif column == 2:
+                    player_2 += 1
+
+    if player_1 > player_2:  # player_1 winner with value 1
+        return 1
+    elif player_2 > player_1:  # player_2 winner with value 2
+        return 2
+    elif player_1 == player_2:  # both winner with same number
+        return 0
+
+
+if __name__ == "__main__":
+    go = [[0, 1, 2, 1], [2, 0, 1, 1], [1, 1, 2, 0]]
+    print(who_won(go))
