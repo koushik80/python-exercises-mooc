@@ -18,3 +18,12 @@
 # howdydoody
 
 # Solution:
+
+def longest(strings: list):
+    longest_strings = max(strings, key=len)
+    return longest_strings
+
+
+if __name__ == "__main__":
+    strings = ["hi", "hiya", "hello", "howdydoody", "hi there"]
+    print(longest(strings))
