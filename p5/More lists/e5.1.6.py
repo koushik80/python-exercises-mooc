@@ -47,3 +47,44 @@
 # but your function should allow for it to be checked.
 
 # Solution:
+
+def block_correct(sudoku: list, row_no: int, column_no: int):
+
+    lst = []
+    x = 0
+    y = 0
+
+    for i in range(9):
+        j = sudoku[row_no + x][column_no + y]
+        lst.append(j)
+        y += 1
+        if y == 3:
+            x += 1
+            y = 0
+
+    numbers = []
+
+    for num in lst:
+        if num > 0 and num in numbers:
+            return False
+        numbers.append(num)
+
+    return True
+
+
+if __name__ == '__main__':
+    sudoku = [
+        [9, 0, 0, 0, 8, 0, 3, 0, 0],
+        [2, 0, 0, 2, 5, 0, 7, 0, 0],
+        [0, 2, 0, 3, 0, 0, 0, 0, 4],
+        [2, 9, 4, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 7, 3, 0, 5, 6, 0],
+        [7, 0, 5, 0, 6, 0, 4, 0, 0],
+        [0, 0, 7, 8, 0, 3, 9, 0, 0],
+        [0, 0, 1, 0, 0, 0, 0, 0, 3],
+        [3, 0, 0, 0, 0, 0, 0, 0, 2]
+    ]
+
+    print(block_correct(sudoku, 0, 0))
+    print(block_correct(sudoku, 1, 2))
+    print(block_correct(sudoku, 4, 6))
