@@ -1,4 +1,4 @@
-# E-5.2.1:
+# E-5.2.1: Items multiplied by two
 
 # Problem:
 

@@ -1,4 +1,4 @@
-# E-5.2.2:
+# E-5.2.2: Remove the smallest
 
 # Problem:
 

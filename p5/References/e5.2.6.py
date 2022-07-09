@@ -1,4 +1,4 @@
-# E-5.2.6:
+# E-5.2.6: Transpose a matrix
 
 # Problem:
 
