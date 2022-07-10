@@ -67,3 +67,59 @@
 # although the size of the sudoku grid will make the view less orderly than usual.
 
 # Solution:
+
+def copy_and_add(sudoku: list, row_no: int, column_no: int, number: int):
+
+    grid_copy = []
+
+    for x in sudoku:
+        row = []
+        for i in x:
+            row.append(i)
+        grid_copy.append(row)
+
+    grid_copy[row_no][column_no] = number
+    return grid_copy
+
+
+def print_sudoku(sudoku: list):
+
+    for x in range(9):
+        for y in range(9):
+            if sudoku[x][y] == 0:
+                sudoku[x][y] = "_"
+
+    grid = sudoku[:]
+
+    for row in range(9):
+        if row > 0 and row % 3 == 0:
+            print()
+
+        for column in range(0, 9):
+            print(grid[row][column], end=" ")
+            column += 1
+            if column % 3 == 0:
+                print(end=" ")
+
+        print()
+
+
+if __name__ == "__main__":
+    sudoku = [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ]
+
+    grid_copy = copy_and_add(sudoku, 0, 0, 2)
+    print("Original:")
+    print_sudoku(sudoku)
+    print()
+    print("Copy:")
+    print_sudoku(grid_copy)
