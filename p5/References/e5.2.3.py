@@ -76,3 +76,51 @@
 # print()
 
 # Solution:
+
+def print_sudoku(sudoku: list):
+
+    for x in range(9):
+        for y in range(9):
+            if sudoku[x][y] == 0:
+                sudoku[x][y] = "_"
+
+    grid = sudoku[:]
+
+    for row in range(9):
+        if row > 0 and row % 3 == 0:
+            print()
+
+        for column in range(0, 9):
+            print(grid[row][column], end=" ")
+            column += 1
+            if column % 3 == 0:
+                print(end=" ")
+
+        print()
+
+
+def add_number(sudoku: list, row_no: int, column_no: int, number: int):
+    sudoku[row_no][column_no] = number
+
+
+if __name__ == '__main__':
+    sudoku = [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ]
+
+    print_sudoku(sudoku)
+    add_number(sudoku, 0, 0, 2)
+    add_number(sudoku, 1, 2, 7)
+    add_number(sudoku, 5, 7, 3)
+    print()
+    print("Three numbers added:")
+    print()
+    print_sudoku(sudoku)
