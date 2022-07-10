@@ -22,3 +22,17 @@
 #doubled: [4, 8, 10, 6, 22, -8]
 
 # Solution:
+
+def double_items(numbers: list):
+    new_nums = numbers[:]
+    for i in range(len(new_nums)):
+        new_nums[i] *= 2
+
+    return new_nums
+
+
+if __name__ == "__main__":
+    numbers = [2, 4, 5, 3, 11, -4]
+    numbers_doubled = double_items(numbers)
+    print("original:", numbers)
+    print("doubled:", numbers_doubled)
