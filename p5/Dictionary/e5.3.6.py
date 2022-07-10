@@ -1,4 +1,4 @@
-# E-5.3.6:
+# E-5.3.6: Invert a dictionary
 
 # Problem
 

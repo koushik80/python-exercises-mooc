@@ -1,4 +1,4 @@
-# E-5.3.3:
+# E-5.3.3: Histogram
 
 # Problem
 

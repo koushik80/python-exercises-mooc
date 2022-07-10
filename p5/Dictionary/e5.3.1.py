@@ -1,4 +1,4 @@
-# E-5.3.1:
+# E-5.3.1: Times ten
 
 # Problem
 
