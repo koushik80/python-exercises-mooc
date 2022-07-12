@@ -23,3 +23,21 @@
 # y *
 
 # Solution:
+
+def histogram(exm: str):
+
+    letters = {}
+
+    for letter in exm:
+        if letter not in letters:
+            letters[letter] = 0
+        letters[letter] += 1
+
+    for key, value in letters.items():
+        print(key, value * "*")
+
+
+if __name__ == '__main__':
+    histogram("abba")
+    print()
+    histogram("statistically")
