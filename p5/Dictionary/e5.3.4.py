@@ -37,3 +37,32 @@
 # so you should not place any code within an if __name__ == "__main__" block.
 
 # Solution:
+
+def phone_book():
+
+    ph_index = {}
+
+    while True:
+        command = int(input("command (1 search, 2 add, 3 quit): "))
+
+        if command == 1:
+            name = input("name: ")
+            if name not in ph_index:
+                print("no number")
+                continue
+            print(ph_index[name])
+
+        elif command == 2:
+            name = input("name: ")
+            number = input("number: ")
+            ph_index[name] = number
+            print("ok!")
+
+        elif command == 3:
+            print("quitting...")
+            break
+
+    return ph_index
+
+
+phone_book()
