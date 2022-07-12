@@ -34,3 +34,36 @@
 # quitting...
 
 # Solution:
+def phone_book():
+
+    ph_index = {}
+
+    while True:
+        command = int(input("command (1 search, 2 add, 3 quit): "))
+
+        if command == 1:
+            name = input("name: ")
+            if name not in ph_index:
+                print("no number")
+                continue
+            for name, numbers in ph_index.items():
+                for number in numbers:
+                    print(number)
+
+        elif command == 2:
+            name = input("name: ")
+            number = input("number: ")
+            if name not in ph_index:
+                ph_index[name] = []
+            ph_index[name].append(number)
+
+            print("ok!")
+
+        elif command == 3:
+            print("quitting...")
+            break
+
+            return ph_index
+
+
+phone_book()
