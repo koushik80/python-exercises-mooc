@@ -19,3 +19,17 @@
 #(-1, 5, 7)
 
 # Solution:
+def create_tuple(x: int, y: int, z: int):
+
+    tuple = ()
+    list = [x, y, z]
+    list.sort()
+    first_elm = list[0]   # smallest arguments
+    second_elm = list[-1]  # greatest arguments
+    third_elm = sum(list)  # total arguments
+    tuple = (first_elm, second_elm, third_elm)
+    return tuple
+
+
+if __name__ == '__main__':
+    print(create_tuple(5, 3, -1))
