@@ -1,4 +1,4 @@
-# E-6.1.1: Larges number
+# E-6.1.1: Largest number
 
 # Problem: The file numbers.txt contains integer numbers, one number per line.
 # The contents could look like this:
@@ -24,3 +24,16 @@
 
 
 # Solution:
+
+def largest():
+    with open("numbers.txt") as new_file:
+        largest_num = 0
+
+        for line in new_file:
+            if int(line) > largest_num:
+                largest_num = int(line)
+    return largest_num
+
+
+if __name__ == '__main__':
+    print(largest())
