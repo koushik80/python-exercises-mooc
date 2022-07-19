@@ -30,3 +30,48 @@
 
 
 # Solution:
+
+def matrix(txt: str):
+    matrix = []
+    with open(txt) as new_file:
+        for line in new_file:
+            elements = []
+            value = line.split(",")
+            for s in value:
+                elements.append(int(s))
+            matrix.append(elements)
+
+    return matrix
+
+
+def row_sums():
+    list = matrix("matrix.txt")
+    p = []
+    for i in range(len(list)):
+        number = 0
+        for j in range(len(list[i])):
+            number += list[i][j]
+        p.append(number)
+    return p
+
+
+def matrix_sum():
+    value_sums = row_sums()
+    return sum(value_sums)
+
+
+def matrix_max():
+    list = matrix("matrix.txt")
+    initial = True
+    for index in range(len(list)):
+        for value in list[index]:
+            if initial or greatest < value:
+                greatest = value
+                initial = False
+    return greatest
+
+
+if __name__ == '__main__':
+    print(row_sums())
+    print(matrix_sum())
+    print(matrix_max())
