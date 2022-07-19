@@ -18,7 +18,7 @@
 # print(my_movies)
 
 
-# Sample output:
+# Sample output :
 
 # [{"name": "Gone with the Python", "director": "Victor Pything", "year": 2017, "runtime": 116},
 # {"name": "Pythons on a Plane", "director": "Renny Pytholin", "year": 2001, "runtime": 94}]
