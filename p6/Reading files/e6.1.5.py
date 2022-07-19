@@ -7,6 +7,7 @@
 
 
 # Solution:
+
 #student_info = input("Student information: ")
 #exercise_data = input("Exercises completed: ")
 #exam_points = input("Exam points: ")
