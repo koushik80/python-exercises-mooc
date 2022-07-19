@@ -7,14 +7,15 @@
 
 
 # Solution:
-student_info = input("Student information: ")
-exercise_data = input("Exercises completed: ")
-exam_points = input("Exam points: ")
+#student_info = input("Student information: ")
+#exercise_data = input("Exercises completed: ")
+#exam_points = input("Exam points: ")
 
 
-#student_info = "students1.csv"
-#exercise_data = "exercises1.csv"
-#exam_points = "exam_points1.csv"
+student_info = "students1.csv"
+exercise_data = "exercises1.csv"
+exam_points = "exam_points1.csv"
+
 
 def grade(points):
     x = 0
@@ -66,5 +67,5 @@ with open("exam_points1.csv") as file:
 
 
 for exr_num, amount in exercises.items():
-    sum_exam = points[exr_num] + awarded_points[amount]
-    print(f'{students[exr_num]} {grade[sum_exam]}')
+    sum_exam = points[exr_num] + awarded_points(amount)
+    print(f'{students[exr_num]} {grade(sum_exam)}')
