@@ -8,6 +8,7 @@
 
 # Solution:
 
+
 if False:
     student_info = input("Student information: ")
     exercise_data = input("Exercises completed: ")
