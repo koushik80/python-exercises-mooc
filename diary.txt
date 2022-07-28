@@ -1,0 +1,3 @@
+Hello python!
+It's fun to learn Python!
+Next I will proceed to Data analytics
