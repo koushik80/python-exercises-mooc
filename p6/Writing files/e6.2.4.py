@@ -8,3 +8,14 @@
 
 
 # Solution:
+
+def store_personal_data(person: tuple):
+    with open("people.csv", "w") as new_file:
+        Name = person[0]
+        Age = int(person[1])
+        Height = float(person[2])
+        new_file.write(f'{Name};{Age};{Height}')
+
+
+if __name__ == '__main__':
+    ("Paul Paulson", 37, 175.5)
