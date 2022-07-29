@@ -21,3 +21,19 @@
 
 
 # Solution:
+
+
+def read_input(txt: str, starts: int, ends: int):
+    while True:
+        try:
+            text = int(input("Please type in a number: "))
+            if text >= starts and text <= ends:
+                return text
+        except ValueError:
+            pass
+        print(f'You must type in an integer between {starts} and {ends}')
+
+
+if __name__ == "__main__":
+    number = read_input("Please type in a number: ", 5, 10)
+    print("You typed in:", number)
