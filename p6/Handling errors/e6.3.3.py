@@ -1,4 +1,4 @@
-# E-6.3.3:
+# E-6.3.3: Incorrect lottery numbers
 
 # Problem:The file lottery_numbers.csv containts winning lottery numbers in the following format:
 
