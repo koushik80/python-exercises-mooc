@@ -20,3 +20,16 @@
 
 
 # Solution:
+
+def new_person(name: str, age: int):
+    x = name.split(" ")
+    if len(name) == 0 or len(x) < 2 or len(name) > 40:
+        raise ValueError
+    if age < 0 or age > 150:
+        raise ValueError
+    return name, age
+
+
+if __name__ == '__main__':
+    person = new_person("John", 42)
+    print(person)
