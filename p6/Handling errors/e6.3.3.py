@@ -44,3 +44,42 @@
 
 
 # Solution:
+def filter_incorrect():
+    weeks = ""
+    for i in range(1, 53):
+        weeks += str(i)
+    values = ""
+    for i in range(1, 40):
+        values += str(i)
+    with open("lottery_numbers.csv") as new_file:
+        correct = {}
+
+        for line in new_file:
+            all = {}
+            line = line.replace('\n', '')
+            parts = line.split(';')
+            all[parts[0]] = parts[1]
+
+            for week, numbers in all.items():
+                if week[7:] not in weeks:
+                    continue
+            m = numbers.split(',')
+            y = True
+            z = []
+            for i in m:
+                if i not in values or len(m) != 7:
+                    y = False
+                    break
+            for i in m:
+                if i not in z:
+                    z.append(i)
+                else:
+                    y = False
+                    break
+            if y == False:
+                continue
+            correct[week] = numbers
+
+    with open("correct_numbers.csv", "w") as new_file:
+        for week, lotteries in correct.items():
+            new_file.write(f'{week} x;{lotteries}\n')
