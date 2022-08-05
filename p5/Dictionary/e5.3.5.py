@@ -54,15 +54,15 @@ def phone_book():
             name = input("name: ")
             number = input("number: ")
             if name not in ph_index:
-                ph_index[name] = []
-            ph_index[name].append(number)
+                ph_index[name] = [number]
+            else:
+                ph_index[name].append(number)
 
             print("ok!")
 
         elif command == 3:
             print("quitting...")
-            break
-
+            # break
             return ph_index
 
 
