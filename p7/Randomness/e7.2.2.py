@@ -24,3 +24,20 @@
 
 
 # Solution:
+
+from random import sample
+from string import ascii_lowercase
+
+
+def generate_password(length: int):
+    list = sample(ascii_lowercase, length)
+    password = ""
+
+    for letter in list:
+        password += letter
+    return password
+
+
+if __name__ == '__main__':
+    for letter in range(10):
+        print(generate_password(8))
