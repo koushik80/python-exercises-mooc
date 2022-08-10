@@ -23,3 +23,25 @@
 # That is, there will not be a date like February 31st.
 
 # Solution:
+
+from datetime import datetime
+
+day = int(input("Day: "))
+month = int(input("Month: "))
+year = int(input("Year: "))
+
+
+def how_old():
+
+    dob = datetime(year, month, day)
+    millenium = datetime(1999, 12, 31)
+    difference = millenium - dob
+
+    if dob > millenium:
+        print("You weren't born yet on the eve of the new millennium.")
+    else:
+        print(
+            f'You were {difference.days} days old on the eve of the new millennium.')
+
+
+how_old()
