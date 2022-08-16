@@ -36,7 +36,7 @@
 
 # Solution:
 
-from string import punctuation
+import string
 
 
 def change_case(orig_string: str):
@@ -58,10 +58,15 @@ def split_in_half(orig_string: str):
 
 
 def remove_special_characters(orig_string: str):
-    for x in orig_string:
-        if x in punctuation or x == '¤':
-            orig_string = orig_string.replace(x, '')
-    return orig_string
+    new_v = ""
+    allowed = string.ascii_letters + string.digits + "ÄäÅåÖö" + " "
+
+    for letters in orig_string:
+        if letters in allowed:
+            new_v += letters
+        else:
+            continue
+    return new_v
 
 
 if __name__ == '__main__':
