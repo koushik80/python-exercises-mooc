@@ -7,3 +7,42 @@
 
 
 # Solution:
+
+from difflib import get_close_matches
+
+
+def spellchecker_v2():
+    wordlist = []
+
+    with open("wordlist.txt") as file:
+        for line in file:
+            line = line.replace("\n", "")
+            wordlist.append(line)
+
+    list = []
+    sentence = input("Write text: ")
+    sentence = sentence.split()
+
+    for word in sentence:
+        if word.lower() in wordlist:
+            list.append(word)
+        else:
+            word = word.replace(word, f'*{word}*')
+            list.append(word)
+
+    for wrd in list:
+        print(wrd, end=" ")
+    print("\nsuggestions:")
+
+    proposals = {}
+    for wrd in list:
+        if wrd.startswith('*'):
+            proposals[wrd[1:len(wrd)-1]
+                      ] = get_close_matches(wrd[1:len(wrd)-1], wordlist)
+
+    for wrd, proposal in proposals.items():
+        p = ", ".join(proposal)
+        print(f"{wrd}: {p}")
+
+
+spellchecker_v2()
