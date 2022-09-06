@@ -6,7 +6,6 @@
 # Sample output:
 
 
-
 # Solution:
 
 class Stopwatch:
