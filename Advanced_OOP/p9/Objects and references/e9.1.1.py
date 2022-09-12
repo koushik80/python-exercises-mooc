@@ -1,10 +1,62 @@
 # E-9.1.1: The fastest car
 
-# Problem: https://programming-22.mooc.fi/part-9/1-objects-and-references#programming-exercise-the-fastest-car
+# Problem: The exercise template contains a class named Car which represents the features
+#of a car through two attributes: make (str) and top_speed (int).
+
+#Please write a function named fastest_car(cars: list) which takes a list of Car objects as its argument.
+
+#The function should return the make of the fastest car.
+#You may assume there will always be a single car with the highest top speed.
+#Do not change the list given as an argument,
+#or make any changes to the Car class definition.
+
+#You may use the following code to test your function:
+
+#if __name__ == "__main__":
+    #car1 = Car("Saab", 195)
+    #car2 = Car("Lada", 110)
+    #car3 = Car("Ferrari", 280)
+    #car4 = Car("Trabant", 85)
+
+    #cars = [car1, car2, car3, car4]
+    #print(fastest_car(cars))
 
 
 # Sample output:
 
+# Ferrari
+
 
 
 # Solution:
+
+# Write your solution after the class Car
+# Do not make changes to the class!
+class Car:
+    def __init__(self, make: str, top_speed: int):
+        self.make = make
+        self.top_speed = top_speed
+
+    def __str__(self):
+        return f"Car (make: {self.make}, top speed: {self.top_speed})"
+
+# WRITE YOUR SOLUTION HERE:
+def fastest_car(cars: list):
+    num = 0
+    fastest = ""
+    for car in cars:
+        if car.top_speed > num:
+            num = car.top_speed
+            fastest = car.make
+    return fastest
+
+
+
+if __name__ == "__main__":
+    car1 = Car("Saab", 195)
+    car2 = Car("Lada", 110)
+    car3 = Car("Ferrari", 280)
+    car4 = Car("Trabant", 85)
+
+    cars = [car1, car2, car3, car4]
+    print(fastest_car(cars))
